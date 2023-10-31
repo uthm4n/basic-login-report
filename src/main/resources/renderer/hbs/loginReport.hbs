@@ -1,0 +1,19 @@
+<div id="user-login-report">
+   <h2>Login Information</h2>
+   <table>
+      <thead>
+         <th>User ID</th>
+         <th>Username (email)</th>
+         <th>Number of Logins</th>
+      </thead>
+      <tbody>
+         {{#each main}}
+         <tr>
+            <td>{{dataMap.userID}}</td>
+            <td>{{dataMap.username}}</td>
+            <td>{{dataMap.logins}}</td>
+         </tr>
+         {{/each}}
+      </tbody>
+   </table>
+</div>
